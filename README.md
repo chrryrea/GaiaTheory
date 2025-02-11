@@ -1,64 +1,63 @@
-# Gaia Hypothesis & Global Warming: Visualizing Earth's Feedback Loops
-## Essential Question  
-**"Are Earth's self-regulating systems being overwhelmed by contemporary global warming, and what does this mean for planetary stability as well as our futures?"**
+Endangered Species Population & Conservation: Visualizing Protection Impact
+Essential Question
+"How has the population of endangered species (tigers, polar bears) changed in protected vs. non-protected areas over the past 50 years, and what does this reveal about conservation effectiveness?"
+Data Sources
+1. World Wildlife Fund (WWF) Population Data
 
-## Data Sources  
-### 1. **Global Temperature Anomalies**  
-   - **Source:** [NASA GISTEMP](https://data.giss.nasa.gov/gistemp/)  
-   - **Format:** CSV  
-   - **Description:** Monthly/Annual temperature anomalies (1880–present).  
-   - **Usage:** Baseline for comparing predicted stability against warming trends.  
+Source: WWF Living Planet Index
+Format: CSV
+Description: Global species population trends (1970-2020).
+Usage: Core population tracking baseline.
 
-### 2. **CO₂ Emissions & Feedback Data**  
-   - **Source:** [Climate TRACE](https://climatetrace.org/data)  
-   - **Format:** CSV  
-   - **Description:** Sector-specific emissions data (2015–2024).  
-   - **Usage:** Track human-driven emissions vs. natural carbon sink efficiency.  
+2. IUCN Red List Database
 
-### 3. **MIT Climate Projections**  
-   - **Source:** [MIT Integrated Global System Model](https://globalchange.mit.edu)  
-   - **Format:** CSV  
-   - **Description:** Projected temperature/CO₂ scenarios (2021–2100).  
-   - **Usage:** Simulate Gaia's future regulatory capacity under different emissions pathways.  
+Source: IUCN Red List
+Format: JSON
+Description: Species conservation status & assessments.
+Usage: Track threat levels and population viability.
 
-### 4. **Gaia Hypothesis Critiques**  
-   - **Source:** [Springer: Critiques of Gaia](https://link.springer.com/article/10.1023/A:1023494111532)  
-   - **Format:** PDF 
-   - **Usage:** Contextualize data anomalies
+3. Protected Planet Database
 
-## Data Files  
-- **Raw Data Links:**  
-  - [`NASA_GISTEMP.csv`](https://data.giss.nasa.gov/gistemp/)  
-  - [`Climate_TRACE_Global.csv`](https://climatetrace.org/data)  
+Source: UN Environment Programme
+Format: GeoJSON
+Description: Protected area boundaries & effectiveness.
+Usage: Compare protection status impacts.
 
-## Visualization Approaches  
-### 1. **Interactive 3D Globe**  
-   - **Tech Stack:** React + Three.js  
-   - **Features:**  
-     - Layer toggles for CO₂ emissions, deforestation, and ocean heat.  
-     - Timeline slider (1950–2100) to visualize "Gaia stress" over time.  
-   - **Wireframe:**  
-     ![Globe Wireframe](wireframes/globe_sketch.png) *(Placeholder)*  
+4. Species-Specific Surveys
 
-### 2. **Gaia Stress Test Simulator (Possible)**   
-   - **Tech Stack:** React + Recharts  
-   - **Features:**  
-     - Sliders to adjust variables (e.g., "Deforestation Rate", "Fossil Fuel Use").  
-     - Real-time projections of biodiversity loss and temperature rise.  
-   - **Sample Simulation Output:**  
-     ```bash
-     Deforestation: 2%/year → Projected Amazon Collapse: 2045 (±3 years)
-     ```  
+Source: Global Tiger Initiative
+Format: CSV
+Description: Detailed population surveys.
+Usage: Validate broader datasets.
 
-gaiatheory-vis/ \
-├── data/ \
-│ ├── raw/ # Links to external datasets \
-│ └── processed/ # Cleaned data \
-├── src/ \
-│ ├── components/ # React components \
-│ ├── utils/ # Data parsing scripts \
-│ └── App.js # Main dashboard \
-├── public/ \
-│ └── wireframes/ \
-├── LICENSE \
-└── package.json \
+Visualization Approaches
+1. Interactive Population Tracker
+
+Tech Stack: React + Recharts
+Features:
+
+Species selection dropdown
+Protected vs. unprotected comparison
+Timeline analysis (1970-2020)
+
+2. Conservation Impact Dashboard
+
+Tech Stack: React + Shadcn UI
+Features:
+
+Population metrics cards
+Protection effectiveness indicators
+Geographic distribution maps
+
+Project Structure  
+endangered-species-vis/   
+├── data/  
+│ ├── raw/ # Original datasets   
+│ └── processed/ # Cleaned data   
+├── src/   
+│ ├── components/ # React components   
+│ ├── utils/ # Data processing   
+│ └── App.js # Main dashboard   
+├── public/  
+│ └── assets/  
+└── package.json  
