@@ -50,15 +50,15 @@
      Deforestation: 2%/year → Projected Amazon Collapse: 2045 (±3 years)
      ```  
 
-gaiatheory-vis/
-├── data/
-│ ├── raw/ # Links to external datasets
-│ └── processed/ # Cleaned data
-├── src/
-│ ├── components/ # React components
-│ ├── utils/ # Data parsing scripts
-│ └── App.js # Main dashboard
-├── public/
-│ └── wireframes/
-├── LICENSE
-└── package.json
+gaiatheory-vis/ \
+├── data/ \
+│ ├── raw/ # Links to external datasets \
+│ └── processed/ # Cleaned data \
+├── src/ \
+│ ├── components/ # React components \
+│ ├── utils/ # Data parsing scripts \
+│ └── App.js # Main dashboard \
+├── public/ \
+│ └── wireframes/ \
+├── LICENSE \
+└── package.json \
